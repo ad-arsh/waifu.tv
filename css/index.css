@@ -11,7 +11,7 @@
 header {
     width: 100%;
     /* border: 2px solid red; */
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 20;
@@ -24,7 +24,7 @@ nav {
     padding: 0px 25px 5px 25px;
     font-size: 16px;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.596) 80%,rgba(0, 0, 0, 0));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596) 80%, rgba(0, 0, 0, 0));
 }
 
 .logo {
@@ -69,6 +69,7 @@ nav ul li a {
     /* align-items: center; */
     /* overflow: hidden; */
 }
+
 .slide video {
     width: 100vw;
 }
@@ -86,7 +87,7 @@ nav ul li a {
     overflow: hidden;
     padding-left: 65px;
     height: calc(100vw/1.7777777777777778);
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.697) 30%,rgba(0, 0, 0, 0.242),rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.697) 30%, rgba(0, 0, 0, 0.242), rgba(0, 0, 0, 0));
 }
 
 .slider-buttons {
@@ -102,7 +103,8 @@ nav ul li a {
 
 .slider-buttons i {
     cursor: pointer;
-    background-color: red;padding: 5px 10px;
+    background-color: red;
+    padding: 5px 10px;
     border-radius: 2px;
 }
 
@@ -130,4 +132,27 @@ nav ul li a {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent; */
+}
+
+.mast{
+    display: none;
+}
+
+@media (max-width:740px) {
+    .mast {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: red;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        font-family: poppins;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
 }
